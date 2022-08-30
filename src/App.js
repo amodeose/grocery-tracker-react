@@ -1,11 +1,15 @@
-
-import './App.css';
+import { Fragment } from "react";
+import Header from "./components/Header";
+import NewEntry from "./components/NewEntry";
+import List from "./components/List";
 
 function App() {
   return (
-    <div className="App">
+    <Fragment>
       <Header />
-    </div>
+      <NewEntry />
+      <List />
+    </Fragment>
   );
 }
 
