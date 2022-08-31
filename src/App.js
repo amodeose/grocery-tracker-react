@@ -12,11 +12,15 @@ function App() {
     setList(prev => [item, ...prev]);
   }
 
+  const deleteItem = id => {
+    setList(prev => prev.filter((item, index) => index != id))
+  }
+
   return (
     <Fragment>
       <Header />
       <NewEntry addToList={addToList}/>
-      {list.length > 0 && <List list={list}/>}
+      {list.length > 0 && <List list={list} delete={deleteItem}/>}
     </Fragment>
   );
 }
