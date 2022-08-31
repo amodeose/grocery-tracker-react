@@ -16,7 +16,7 @@ function App() {
     <Fragment>
       <Header />
       <NewEntry addToList={addToList}/>
-      <List list={list}/>
+      {list.length > 0 && <List list={list}/>}
     </Fragment>
   );
 }
