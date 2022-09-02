@@ -34,7 +34,6 @@ function App() {
       <Header />
       <NewEntry addToList={addToList}/>
       {list && <List list={list} delete={deleteItem}/>}
-      <List list={list} delete={deleteItem}/>
     </Fragment>
   );
 };
