@@ -33,7 +33,7 @@ function App() {
     <Fragment>
       <Header />
       <NewEntry addToList={addToList}/>
-      {list.length > 0 && <List list={list} delete={deleteItem}/>}
+      {list && <List list={list} delete={deleteItem}/>}
     </Fragment>
   );
 };
