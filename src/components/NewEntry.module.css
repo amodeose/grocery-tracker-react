@@ -27,3 +27,10 @@
     border: 1px solid #2c3e50;
     cursor: pointer;
 }
+
+.new-entry button:disabled {
+    background-color: #bdc3c7;
+    border: 1px solid #bdc3c7;
+    cursor: default;
+    color:white;
+}
